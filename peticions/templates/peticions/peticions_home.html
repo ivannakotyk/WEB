@@ -1,0 +1,22 @@
+{% extends 'mainapp/layout.html' %}
+
+{% block title%}Petitions{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>All petitions</h1>
+        {% if peticions %}
+            {% for el in peticions %}
+                <div class="detailed">
+                     <a href='{% url "detail" el.id %}'><h2 style="font-weight: bold">{% filter upper %}{{ el.title }}{% endfilter %}</h2></a>
+                     <p>{{ el.text }}</p>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>There are no created petitions</p>
+        {% endif %}
+
+
+
+    </div>
+{% endblock %}

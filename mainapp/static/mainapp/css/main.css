@@ -1,0 +1,223 @@
+
+body {
+    background: #343a40; /* Зміна фону сторінки */
+}
+
+ol,
+ul,
+dl {
+  margin-top: 8px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 50%;
+	}
+}
+
+nav {
+    border-radius: 10px;
+    position: sticky;
+    top: 0;
+    width: 1200px;
+    text-align: center;
+    float: top;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    height: 10vh;
+    border: 3px solid rgba(255, 255, 255, 0.75);
+    background: rgba(52, 58, 64, 0.8); /* Зміна фону навігації */
+}
+
+
+nav ul li, nav ul a {
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 35px;
+    color: white;
+    display: inline-flex;
+    transition: transform .6s ease;
+    text-decoration: none;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+nav ul li:hover, nav ul a:hover {
+    color: #ffc107; /* Зміна кольору при наведенні */
+    font-weight: bold;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+.features {
+    background: rgba(52, 58, 64, 0.4); /* Зміна фону секції */
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 1200px;
+    min-height: 90vh;
+    max-height: 100%;
+}
+
+.features h1 {
+    font-size: 40px;
+    padding: 20px;
+    font-weight: bolder;
+}
+
+.features p {
+    font-size: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.features .btn-light:hover, .btn-light:hover {
+    color: #ffffff;
+    background: #007bff; /* Зміна кольору при наведенні */
+    transition: transform .6s ease;
+    text-decoration: none;
+    transform: scale(1.05);
+    border-radius: 15px;
+}
+
+.features .btn-light, .btn-light {
+    font-weight: 600;
+    border-radius: 15px;
+    border: black;
+}
+
+.detailed {
+    border-radius: 15px;
+    background: linear-gradient(-45deg, rgba(33, 37, 41, 0.6), rgba(52, 58, 64, 0.6), rgba(73, 80, 87, 0.6), rgba(108, 117, 125, 0.6)); /* Зміна градієнта */
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite;
+    border: 3px solid rgba(255, 255, 255, 0.75);
+    padding: 10px;
+    width: 500px;
+    height: 400px;
+    margin: 20px;
+    text-align: center;
+    display: inline-block;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+form {
+    width: 800px;
+    position: center;
+    clear: both;
+    margin: 30px auto;
+    text-align: center;
+}
+
+form textarea {
+    height: 300px;
+}
+
+.btn-success {
+    border-radius: .375rem;
+    height: 40px;
+    width: 110px;
+    font-weight: 700;
+    background: #28a745; /* Зміна кольору кнопки */
+    border: 1px solid white;
+}
+
+.btn-success:hover {
+    font-weight: 700;
+    border: 1px solid white;
+    background: #218838; /* Зміна кольору при наведенні */
+    transition: transform .6s ease;
+    transform: scale(1.06);
+}
+
+.detailed a {
+    text-decoration: none;
+    color: white;
+}
+
+.detailed p {
+    font-size: 15px;
+}
+
+.detailed h2 {
+    font-size: 25px;
+}
+
+.detailed h2:hover {
+    transition: transform .6s ease;
+    text-decoration: none;
+    transform: scale(1.15);
+    color: #ffc107; /* Зміна кольору при наведенні */
+}
+
+table {
+    background: rgba(0, 0, 0, 0.35);
+    border: 1px solid #ffffff;
+    font-size: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0;
+}
+
+.btn-info {
+    position: relative;
+}
+
+.btn-info .popuptext {
+    font-weight: normal;
+    visibility: hidden;
+    width: 350px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    margin-left: -190px;
+}
+
+.btn-info .popuptext::after {
+    width: auto;
+    display: inline-flex;
+    font-weight: normal;
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.btn-info .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.social_network, .social_network:hover {
+    margin: 20px;
+    text-decoration: none;
+}
